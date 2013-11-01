@@ -268,5 +268,5 @@ Support
 
 If you have any problem or suggestion please open an issue. [here](https://github.com/freestrings/shreder-brackets/issues) 
 
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/freestrings/shreder-brackets/trend.png)](https://bitdeli.com/free "Bitdeli Badge") 
 
- 
