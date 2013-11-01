@@ -1,0 +1,35 @@
+<blockquote><p><h5>{{#multipart-request}}Multipart{{/multipart-request}} Rquest</h5></p></blockquote>
+{{#request}}
+    {{> object-iterate}}
+{{/request}}
+{{^request}} 
+    <div class="media">
+        <div class="pull-left"><div>&nbsp;</div></div>
+        <div class="media-body">
+            <span>-</span>
+         </div>
+    </div>
+{{/request}}
+<blockquote><p><h5>Response</h5></p></blockquote>
+{{#response}}
+    <div class="media">
+        <div class="pull-left"><div>&nbsp;</div></div>
+         <div class="media-body">
+            <span>{{type}}</span>
+            <span><ul>
+                {{#annotationFn}} {{#.}}
+                    <li><span>{{name}}</span> <span>{{value}}</span></li>
+                {{/.}} {{/annotationFn}}
+            </ul></span>
+            {{> object-iterate}}
+         </div>
+    </div>
+{{/response}}
+{{^response}} 
+    <div class="media">
+        <div class="pull-left"><div>&nbsp;</div></div>
+        <div class="media-body">
+            <span>-</span>
+         </div>
+    </div>
+{{/response}}

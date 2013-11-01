@@ -1,0 +1,64 @@
+<div id="shreder-main" class="modal hide fade {{version}}" tabindex="-1" role="dialog">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 class="modal-title">Shreder: Simple Spring RESTAPI Document Generator</h3>
+  </div>
+  <div class="modal-body">
+    <p>&nbsp;<a href="#shreder-settings" data-toggle="folding" class="pull-right" id="shreder-setting-btn">Settings</a></p>
+    <div id="shreder-settings">
+    <form>
+      <div class="well">
+          <div class="control-group">
+              <label class="control-label" for="m2-home">Maven Home (*)</label>
+              <div class="controls">
+                  <input id="m2-home" class="input-block-level" type="text" placeholder="/usr/share/maven" required>
+              </div>
+          </div>
+          <div class="control-group">
+              <label class="control-label" for="ignored-classes">Ignored class names. - use comma(,) separator</label>
+              <div class="controls">
+                  <input id="ignored-classes" class="input-block-level" type="text" placeholder="org.joda, com.freestrings.TestClass">
+              </div>
+          </div>
+      </div>
+    </div>
+    
+      <div class="well">
+        
+        <a href="http://maven.apache.org/scm/scms-overview.html" target="_blank">What is SCM URL</a>
+        <div class="controls controls-row">
+          <input id="scm-url" class="span6" type="text" placeholder="scm:git:https://github.com/spring-projects/spring-mvc-showcase" required>
+            <span class="span1">
+                <button type="submit" class="btn primary" id="scm-import">Generate</button>
+            </span>
+        </div>
+      </div> <!-- class="well" -->
+    </form>
+
+    <div class="message">
+      <div class="alert alert-block alert-error fade in" id="shreder-alert" style="display: none">
+          <button type="button" class="close" data-dismiss="alert" id="shreder-alert-close">×</button>
+          <strong>Fail!</strong> <span></span>
+      </div>
+      <form>
+        <div class="well">
+          <blockquote>
+              <p>
+                  <strong>Process Messages</strong> 
+                  <strong id="running-status" class="pull-right text-info" style="font-size: 13px; display: none">Running</strong>
+              </p>
+          </blockquote>
+
+          <div id="shreder-message-layer">
+              <button type="button" class="close" id="message-clear">×</button>
+              <textarea id="shreder-message" readonly rows="10"></textarea>
+          </div>
+
+        </div> <!-- / .well -->
+      </form>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+  </div>
+</div>

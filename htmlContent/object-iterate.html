@@ -1,0 +1,23 @@
+<div class="media">
+    <div class="pull-left"><div>&nbsp;</div></div>
+    <div class="media-body">
+        {{#members}}
+            {{#filterFn}}
+                {{#commentFn}} {{beautyComment}} {{/commentFn}}
+                {{#isMadatoryFn}}<em> # </em>{{/isMadatoryFn}}
+                <strong>{{name}}</strong> 
+                <span>{{type}}</span> 
+                {{#defaultValueFn}}&lt;{{defaultValue}}&gt;{{/defaultValueFn}}
+                <span class="rawtype {{#rawTypeFn}} {{rawType}} {{/rawTypeFn}}"> ({{rawType}}) </span>
+                <span><ul>
+                    {{#annotationFn}} {{#.}}
+                        <li><span>{{name}}</span> <span>{{value}}</span></li>
+                    {{/.}} {{/annotationFn}}
+                </ul></span>
+            {{/filterFn}}
+            <div class="wrap-{{type}}">
+                {{> object-iterate}}
+            </div>
+        {{/members}}
+     </div>
+</div>

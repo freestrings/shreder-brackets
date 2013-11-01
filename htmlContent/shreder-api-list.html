@@ -1,0 +1,20 @@
+{{#apis}}
+    {{#filterPatternFn}}
+    <div class="well" data-index="{{_index}}">
+        <div class="media">
+            <div class="media-body">
+                <div class="title">
+                    {{#methods}}<span class="label label-success">{{.}}</span>&nbsp;{{/methods}}
+                    <h4>{{#patterns}}<span>{{.}}</span>&nbsp;{{/patterns}}</h4>
+                    {{#headers}}<span class="label">{{.}}</span>&nbsp;{{/headers}}
+                    {{#params}}<span class="label">{{.}}</span>&nbsp;{{/params}}
+                    {{#consumes}}<span class="label">{{.}}</span>&nbsp;{{/consumes}}
+                    {{#produces}}<span class="label">{{.}}</span>&nbsp;{{/produces}}
+                    {{#commentFn}} {{beautyComment}} {{/commentFn}}
+                </div>
+                <div data-id="detail"></div>
+            </div>
+        </div>
+    </div>
+    {{/filterPatternFn}}
+{{/apis}}
