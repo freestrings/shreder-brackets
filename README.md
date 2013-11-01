@@ -22,7 +22,7 @@ Paste https://github.com/freestrings/shreder-brackets into Extension URL field
 How to use
 ----------
 
-1. View > Launch Shreder or click a shreder icon ![shreder icon](../master/images/shreder-icon.svg) on main toolbar
+1. View > Launch Shreder or click a shreder icon ![shreder icon](../master/images/shreder-icon.svg?raw=true) on main toolbar
 2. Insert Maven Home and [SCM](http://maven.apache.org/scm/scms-overview.html) URL. If you don't have spring project, you can use [this](https://github.com/freestrings/spring-mvc-showcase). ( it is a comment added clone repository of spring-mvc-showcase )
 3. Click Generate.
 
