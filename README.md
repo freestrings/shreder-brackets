@@ -5,6 +5,8 @@ This is documentaion generator for spring mvc framework based on [Brackets](http
 
 But, this is experimental implementation yet. Shreder will be provided as web service or jenkins plugin later.
 
+See [Shreder Core](https://github.com/freestrings/shreder-core)
+
 See [Short Video](https://vimeo.com/78407321)
 
 ![capture1](./images/shreder1.png?raw=true)]
